@@ -1,8 +1,54 @@
-{
-	"folders": [
-		{
-			"path": "HTML"
-		}
-	],
-	"settings": {}
-}
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>細菌檢測與消毒</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <button class="menu">&#9776;</button>
+    <h1>細菌檢測與消毒</h1>
+    <nav>
+    <ul>
+        <li><a href="#">最新消息</a></li>
+        <li><a href="#">關於我們</a></li>
+        <li><a href="#">細菌種類</a></li>
+        <li><a href="#">及時觀看</a></li>                
+    </ul>
+    </nav>  
+    </header>   
+    <main>
+
+    <section class="news">
+    <h2>隨時監測細菌種類與範圍</h2>
+    <p>平平安安的祝福，健健康康的出院</p>
+    <p><a href="#">瞭解更多</a></p>
+    </section>
+
+    <section class="slogan">
+    <blockquote>" 嚴格監控，讓您有舒服與安全的空間 "</blockquote>
+    </section>
+    
+    <section class="shop">
+    <img src="images/169942397726373_P19107980.jpg" alt="亞東紀念醫院">
+    <div class="info">
+    <h2>亞東紀念醫院</h2>
+    <p>把苦、累、怨留給自己，將樂、安、康送給病人。</p>
+    </div>
+    </section>
+
+    <section class="product">
+        <div>
+            <img src="images/R.jpg" alt="亞東醫院健康管理中心">
+            <h3>
+            <p>溫馨服務，真情護理，<br>為每一個身患病痛的人提供優質高效的服務！</p>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <p>Copyright © 2023 細菌檢測與消毒 All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
