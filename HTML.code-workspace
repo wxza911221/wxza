@@ -1,54 +1,52 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>細菌檢測與消毒</title>
-    <link rel="stylesheet" href="style.css">
+    <title>登錄和註冊</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-    <button class="menu">&#9776;</button>
-    <h1>細菌檢測與消毒</h1>
-    <nav>
-    <ul>
-        <li><a href="#">最新消息</a></li>
-        <li><a href="#">關於我們</a></li>
-        <li><a href="#">細菌種類</a></li>
-        <li><a href="#">及時觀看</a></li>                
-    </ul>
-    </nav>  
-    </header>   
-    <main>
 
-    <section class="news">
-    <h2>隨時監測細菌種類與範圍</h2>
-    <p>平平安安的祝福，健健康康的出院</p>
-    <p><a href="#">瞭解更多</a></p>
-    </section>
+    <div class="container" id="loginContainer">
+        <h2>登錄</h2>
+        <form id="loginForm">
+            <label for="username">用戶名：</label>
+            <input type="text" id="username" name="username" pattern="[a-zA-Z0-9]+" title="只允許英文和數字" placeholder="請輸入用戶名" required>
 
-    <section class="slogan">
-    <blockquote>" 嚴格監控，讓您有舒服與安全的空間 "</blockquote>
-    </section>
-    
-    <section class="shop">
-    <img src="images/169942397726373_P19107980.jpg" alt="亞東紀念醫院">
-    <div class="info">
-    <h2>亞東紀念醫院</h2>
-    <p>把苦、累、怨留給自己，將樂、安、康送給病人。</p>
+            <label for="password">密碼：</label>
+            <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]+" title="只允許英文和數字" placeholder="請輸入密碼" required>
+
+            <button type="submit">登錄</button>
+        </form>
+        
+        <p>還沒有帳號？<a href="#" id="registerLink">註冊</a></p>
     </div>
-    </section>
 
-    <section class="product">
-        <div>
-            <img src="images/R.jpg" alt="亞東醫院健康管理中心">
-            <h3>
-            <p>溫馨服務，真情護理，<br>為每一個身患病痛的人提供優質高效的服務！</p>
-        </div>
-    </section>
-    </main>
-    <footer>
-        <p>Copyright © 2023 細菌檢測與消毒 All Rights Reserved.</p>
-    </footer>
+    <div class="container" id="registerContainer" style="display: none;">
+        <h2>註冊</h2>
+        <form id="registerForm">
+            <label for="newUsername">新用戶名：</label>
+            <input type="text" id="newUsername" name="newUsername" pattern="[a-zA-Z0-9]+" title="只允許英文和數字" placeholder="請輸入新用戶名" required>
+
+            <label for="newPassword">新密碼：</label>
+            <input type="password" id="newPassword" name="newPassword" pattern="[a-zA-Z0-9]+" title="只允許英文和數字" placeholder="請輸入新密碼" required>
+
+            <button type="submit">註冊</button>
+        </form>
+        
+        <p>已經有帳號？<a href="#" id="loginLink">返回登錄</a></p>
+    </div>
+
+    <div class="container" id="loggedInContainer" style="display: none;">
+        <h2>功能區域</h2>
+        <ul>
+            <li><a href="#" id="monitoringLink">監測記錄</a></li>
+            <li><a href="#" id="mapLink">地圖</a></li>
+            <li><a href="#" id="robotLocationLink">機器人現在的位置</a></li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
